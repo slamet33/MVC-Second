@@ -11,8 +11,16 @@ import UIKit
 
 class ContactTableViewCell: UITableViewCell {
     
+//    var dataContact = [ContactModel]()
+    
     @IBOutlet weak var imgContact: UIImageView!
     @IBOutlet weak var nameContact: UILabel!
     @IBOutlet weak var numberContact: UILabel!
     
+    func displayData(_ dataContact: ContactModel) {
+        //        print(dataContact)
+        nameContact?.text = dataContact.nameContact
+        numberContact?.text = dataContact.numberContact
+        imgContact?.load(dataContact.imgContact)
+    }
 }

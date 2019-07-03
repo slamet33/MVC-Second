@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ContactInput {
-    func displayData(_ dataContact: [ContactModel])
+    func displayData(_ dataContact: ContactModel)
 }
