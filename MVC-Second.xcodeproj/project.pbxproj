@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884E585B22CDD84D00E7FCB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E585A22CDD84D00E7FCB0 /* Contact.swift */; };
 		8880C9BF22CB632C005311BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9BE22CB632C005311BB /* AppDelegate.swift */; };
 		8880C9C122CB632C005311BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9C022CB632C005311BB /* ViewController.swift */; };
 		8880C9C422CB632C005311BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8880C9C222CB632C005311BB /* Main.storyboard */; };
@@ -15,11 +16,10 @@
 		8880C9D122CB6475005311BB /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9D022CB6475005311BB /* ContactTableViewCell.swift */; };
 		8880C9D322CB6577005311BB /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9D222CB6577005311BB /* ContactModel.swift */; };
 		8880C9D522CB6E51005311BB /* UIImageView+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9D422CB6E51005311BB /* UIImageView+Resource.swift */; };
-		8880C9DB22CB788D005311BB /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9DA22CB788D005311BB /* ContactView.swift */; };
-		8880C9DD22CB8541005311BB /* ContactInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880C9DC22CB8541005311BB /* ContactInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		884E585A22CDD84D00E7FCB0 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		8880C9BB22CB632C005311BB /* MVC-Second.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-Second.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8880C9BE22CB632C005311BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8880C9C022CB632C005311BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +30,6 @@
 		8880C9D022CB6475005311BB /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		8880C9D222CB6577005311BB /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		8880C9D422CB6E51005311BB /* UIImageView+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Resource.swift"; sourceTree = "<group>"; };
-		8880C9DA22CB788D005311BB /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
-		8880C9DC22CB8541005311BB /* ContactInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 			children = (
 				8880C9C222CB632C005311BB /* Main.storyboard */,
 				8880C9C722CB632D005311BB /* LaunchScreen.storyboard */,
-				8880C9DA22CB788D005311BB /* ContactView.swift */,
 				8880C9D022CB6475005311BB /* ContactTableViewCell.swift */,
 			);
 			path = View;
@@ -90,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8880C9D222CB6577005311BB /* ContactModel.swift */,
-				8880C9DC22CB8541005311BB /* ContactInput.swift */,
+				884E585A22CDD84D00E7FCB0 /* Contact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,11 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8880C9D122CB6475005311BB /* ContactTableViewCell.swift in Sources */,
-				8880C9DB22CB788D005311BB /* ContactView.swift in Sources */,
 				8880C9D522CB6E51005311BB /* UIImageView+Resource.swift in Sources */,
 				8880C9C122CB632C005311BB /* ViewController.swift in Sources */,
+				884E585B22CDD84D00E7FCB0 /* Contact.swift in Sources */,
 				8880C9D322CB6577005311BB /* ContactModel.swift in Sources */,
-				8880C9DD22CB8541005311BB /* ContactInput.swift in Sources */,
 				8880C9BF22CB632C005311BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

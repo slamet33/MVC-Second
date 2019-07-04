@@ -10,29 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    var dataContact = [ContactModel]()
-    var strContactName: [String] = ["Jahe", "Komu", "Yada", "Yondu"]
-    var strContactNumber: [String] = ["085871555289", "087216764177", "087665267632", "087665267632"]
-    var strContactImg: [String] = [
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]
-    
     @IBOutlet weak var contactTableView: UITableView!
-//
-//    lazy var contactInput: ContactInput = {return ContactTableViewCell() as ContactInput}()
-//
+    lazy var contactModel: ContactModel = ContactModel()
+    var dataContact = [Contact]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         contactTableView.delegate = self
         contactTableView.dataSource = self
+        displayData(contactModel.getData())
         
-        for i in 0..<strContactImg.count {
-            dataContact.append(ContactModel(nameContact: strContactName[i], numberContact:  strContactNumber[i], imgContact:  strContactImg[i]))
-            
-        }
+    }
+    
+    func displayData(_ dataContact: [Contact]) {
+        self.dataContact = dataContact
     }
 }
 
@@ -56,4 +48,5 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
 }
+
 

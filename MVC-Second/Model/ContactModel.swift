@@ -9,13 +9,20 @@
 import Foundation
 
 class ContactModel {
-    var nameContact: String?
-    var numberContact: String?
-    var imgContact: String?
     
-    init(nameContact: String, numberContact: String, imgContact: String) {
-        self.imgContact = imgContact
-        self.nameContact = nameContact
-        self.numberContact = numberContact
+    var strContactName: [String] = ["Jahe", "Komu", "Yada", "Yondu"]
+    var strContactNumber: [String] = ["085871555289", "087216764177", "087665267632", "087665267632"]
+    var strContactImg: [String] = [
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]
+    
+    func getData() -> [Contact] {
+        var dataContact = [Contact]()
+        for i in 0..<strContactImg.count {
+            dataContact.append(Contact(nameContact: strContactName[i], numberContact:  strContactNumber[i], imgContact:  strContactImg[i]))
+        }
+        return dataContact
     }
 }
